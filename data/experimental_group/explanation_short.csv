@@ -1,0 +1,1011 @@
+,text,chars,words,tokens
+0,"Polymorphism is a concept in programming where different objects can be used interchangeably, even if they have different types or classes. It allows objects of different classes to be treated as if they were of the same class.
+
+An example of polymorphism is in OOP inheritance, where a subclass can be treated as an instance of its superclass. For instance, a subclass ""Dog"" can be declared as a type of its superclass ""Animal"". Another example of polymorphism is in method overloading, where multiple methods share the same name but have different parameter types, such as a method ""drive"" that can take in a car or a motorcycle as its parameter. This allows the same method name to be used for different objects, making the code more flexible and easier to maintain.",769,131,155
+1,"Polymorphism is the ability of objects to take on multiple forms or behave in different ways depending on the context or situation. In programming, it allows objects of different classes to be treated as if they belong to a common class.
+
+One example of polymorphism in object-oriented programming is inheritance. A subclass inherits the properties and methods of its parent class, but it can also add or override these functionalities to create its own behavior.
+
+Another example is method overloading, where a class defines multiple methods with the same name but different parameters. When the method is called with different arguments, the appropriate overloaded method is triggered and executed.
+
+In Java, the concept of polymorphism is heavily used in interfaces where a class can implement multiple interfaces and provide its own implementation for each method declared in those interfaces. This allows for loose coupling and flexible design.",949,147,166
+2,"Polymorphism is a concept in object-oriented programming that allows a variable, function, or object to have multiple forms or behaviors. It enables objects of different classes to be treated as if they were objects of the same class. 
+
+One example of polymorphism is method overloading, where a method can be defined with the same name but different arguments. For example, a calculator class might have a method named ""add"" that can take two integers, two decimals, or two strings as arguments. 
+
+Another example is method overriding, where a subclass provides a specific implementation of a method that is already defined in its parent class. For example, a parent class ""Animal"" might have a ""speak"" method that is overridden in its subclass ""Dog"" to make a barking noise. 
+
+Polymorphism is also used in Java interfaces, where multiple classes can implement the same interface and provide their own implementation for each method. For instance, a ""Shape"" interface can be implemented by a ""Circle"" class and a ""Square"" class, which each provide their own implementation for the ""calculateArea"" method.",1105,176,224
+3,"Polymorphism is the ability of objects of different classes to be treated as if they were objects of the same class. In other words, it allows objects of different types to be used in the same way.
+
+For example, in object-oriented programming, a parent class can have several subclass implementations, and each subclass can have its own implementation of methods or properties defined in the parent class. When a method is called on an object of the parent class, the appropriate implementation will be used depending on the actual class of the object.
+
+Another example of polymorphism is in the use of interfaces in Java. An interface defines a set of methods that a class must implement. Different classes can implement the same interface, allowing them to be used interchangeably wherever the interface is expected.",818,135,153
+4,"Polymorphism is a concept in Object-Oriented Programming(OOP) where an object or function is able to take on many forms, meaning it can behave differently depending on the context in which it is used. 
+
+One example of polymorphism is method overloading, which is when a class has multiple methods with the same name, but different parameters. The methods can perform different tasks based on the arguments passed to them. 
+
+Another example is method overriding, which is when a subclass has a method with the same name and signature as the one in its superclass. The subclass can then provide its own implementation of the method, which overrides the method in the superclass.
+
+Polymorphism is also commonly used in interfaces, where multiple classes can implement the same interface and provide their own unique implementation of the interface's methods. This allows for flexibility in the use of objects, as different objects can implement the same method in different ways, but still be used interchangeably.",1011,161,192
+5,"Polymorphism is a concept in OOP (Object-Oriented Programming) that allows objects of different types to be treated as if they are of the same type. In other words, it is the ability of objects to take on different forms or behaviors. 
+
+There are two main types of polymorphism: compile-time polymorphism and runtime polymorphism. 
+
+Compile-time polymorphism is also known as method overloading. It's when several methods have the same name, but different parameters. The correct method is determined at compile time based on the number and types of arguments passed in. 
+
+Example: 
+
+```
+public class MathUtils {
+   public int add(int num1, int num2) {
+      return num1 + num2;
+   }
+ 
+   public int add(int num1, int num2, int num3) {
+      return num1 + num2 + num3;
+   }
+}
+```
+
+Runtime polymorphism, also known as method overriding, is when a parent class and a child class have methods with the same name and same parameters, and the child class overrides the parent method. 
+
+Example: 
+
+```
+class Animal {
+   public void makeSound() {
+      System.out.println(""Animal is making a sound"");
+   }
+}
+ 
+class Cat extends Animal {
+   public void makeSound() {
+      System.out.println(""Meow"");
+   }
+}
+ 
+class Dog extends Animal {
+   public void makeSound() {
+      System.out.println(""Woof"");
+   }
+}
+ 
+public class Main {
+   public static void main(String[] args) {
+      Animal myAnimal = new Animal();
+      Animal myCat = new Cat();
+      Animal myDog = new Dog();
+ 
+      myAnimal.makeSound();
+      myCat.makeSound();
+      myDog.makeSound();
+   }
+}
+```
+
+In this example, we have an Animal class with a makeSound() method. We then have two subclasses, Cat and Dog, that override the makeSound() method with their own implementation. As a result, when we call the makeSound() method on the Animal, Cat, and Dog objects, they each produce a different sound. This is an example of runtime polymorphism because the method implementation is determined at runtime, based on the type of object we are using.",2004,305,458
+6,"Polymorphism is a concept in object-oriented programming (OOP) that allows objects or methods to take on multiple forms, depending on the context in which they are used. It allows code to be more flexible, reusable, and easier to maintain.
+
+For example, consider a class called ""Shape"", which can be inherited by other classes such as ""Rectangle"", ""Circle"", and ""Triangle"". Each of these sub-classes can have its own method for calculating the area of the shape, but they all share a common interface (i.e. they all have an area() method) which allows them to be treated as instances of the ""Shape"" class. This is an example of ""static polymorphism"" or ""compile-time polymorphism"".
+
+Another example of polymorphism is ""dynamic polymorphism"" or ""run-time polymorphism"", which allows objects of different classes that share a common interface to be used interchangeably. For example, a program that uses a ""Vehicle"" interface can work with objects of classes such as ""Car"", ""Truck"", and ""Motorcycle"", which all implement the ""Vehicle"" interface. This allows the program to handle any type of ""Vehicle"" object, without needing to specify the exact type of vehicle at compile time.",1177,186,252
+7,"Polymorphism is a concept in object-oriented programming where objects of different classes can be used interchangeably, as they all share a common interface or parent class. This allows for greater flexibility, as code can be written to work with a general type of object rather than specific classes.
+
+For example, imagine a program that allows users to draw different shapes. Rather than having a separate method for each shape (e.g. drawCircle(), drawSquare(), drawTriangle()), a single drawShape() method could be defined that takes in a Shape object. The Shape class would define the common properties and methods of all shapes, such as a color and a draw() method. Subclasses such as Circle, Square, and Triangle would inherit from the Shape class and implement their own draw() method.
+
+Another example is the use of the ""+"" operator in programming languages such as Java or Python. This operator can be used to add together two integers, concatenate two strings, or even merge two arrays. The functionality of this operator changes depending on the type of the operands, allowing it to be used polymorphically.",1119,180,218
+8,"Polymorphism is a concept in object-oriented programming where an object can take on different forms and behave differently depending on the context in which it is used. It is achieved through the use of inheritance and method overriding. 
+
+For example, a parent class can have several child classes that inherit its properties and methods. Each child class can then override or modify those methods to suit its own needs. 
+
+Another example is the use of interfaces, where multiple classes can implement the same interface and have their own unique implementation of its methods. 
+
+The benefit of polymorphism is that it makes code more adaptable and easier to maintain, as different objects can be used interchangeably without requiring any changes in the code that is using them.",781,126,143
+9,"Polymorphism refers to the ability of objects in object-oriented programming to take on different forms or behaviors depending on the context in which they are used. This allows a single interface or method to be used by multiple classes, with each class implementing the interface in different ways.
+
+An example of polymorphism in action is the ability of a ""shape"" class to be inherited by multiple concrete classes such as circle, square and triangle. Each of these classes would have their own implementation of the abstract ""draw"" method, but they would all inherit from the same base ""shape"" class.
+
+Another example of polymorphism is the use of the ""+"" operator in Java. Depending on the context in which the operator is used, it can either perform addition (for two numbers) or concatenation (for two strings).",818,135,160
+10,"Polymorphism is an OOP (object-oriented programming) concept that describes the ability of objects to take multiple forms based on their context. It allows a single interface to be used to represent various types of objects. 
+
+One common example of polymorphism is through inheritance. A child class can inherit from a parent class and override its methods. This allows the child class to have the same methods but perform different actions.
+
+Another example is using interfaces that define a set of methods that must be implemented by all classes that implement that interface. This allows for multiple classes to be substituted for each other as long as they implement the same interface.
+
+Polymorphism also applies to method overloading, which means having multiple methods with the same name but different parameters. This allows a method to be called with different parameter types, leading to different behaviors.",919,144,166
+11,"Polymorphism is the ability of objects to take on different forms or types depending on the context in which they are used. In programming, it means that objects can have different behaviors based on their type or on the input they receive. 
+
+For example, in object-oriented programming, polymorphism can be seen in inheritance, where child classes inherit methods and behaviors from a parent class, but can also have their own unique methods and behaviors. 
+
+Another example of polymorphism is method overloading, where a class can have multiple methods with the same name but different parameters. When the method is called, the appropriate version is determined based on the parameters passed in. 
+
+Polymorphism is also used in interfaces, where multiple classes can implement the same interface but have different behaviors for each method. This allows for flexibility in programming and enables code reuse.",911,142,168
+12,"Polymorphism is a concept in object-oriented programming, where a single interface or method can have multiple implementations. It allows a single variable or call to act in different ways based on the context it is used in.
+
+For example, in Java, the ""+"" operator is polymorphic. It can be used to concatenate strings or add integers, depending on the context it is used in.
+
+Another example is method overriding in inheritance. A child class can have its own implementation of a method that it inherits from its parent class, allowing for different behavior of the same method in different classes.
+
+Polymorphism is a powerful tool that allows for flexibility and extensibility in programming.",695,113,133
+13,"Polymorphism is a fundamental concept in object-oriented programming that refers to the ability of different objects to be treated as if they were the same type. This concept allows for greater flexibility and extensibility of code, as well as simpler implementation of certain design patterns.
+
+There are two types of polymorphism: static and dynamic. Static polymorphism occurs at compile time and involves method overloading, whereas dynamic polymorphism occurs at runtime and involves method overriding.
+
+One example of polymorphism is the use of interfaces in Java. An interface defines a set of methods that a class must implement, allowing objects of different classes to be used interchangeably as long as they implement the same interface. For example, a dog and a cat can both implement an interface called ""Animal"" that defines methods like ""makeSound"" and ""move"", allowing them to be treated as if they were the same type of object.
+
+Another example of polymorphism is the use of inheritance in Python. A subclass inherits properties and behaviors from its superclass, but can also override and extend them as needed. This allows for more specialized behavior in different objects while maintaining a common interface. For example, a ""Vehicle"" superclass might have methods for ""start"" and ""stop"", which can be overridden in a ""Car"" subclass to include specific behaviors like ""turn on headlights"" or ""engage parking brake"". 
+
+Overall, polymorphism is a powerful tool for making code more modular and adaptable, allowing it to handle a wide variety of use cases with ease.",1584,249,302
+14,"Polymorphism is a programming concept in which an object can take on different forms or behaviors based on the context in which it is being used. This means that multiple classes can be used interchangeably without altering the functionality of the program. Some examples of polymorphism are:
+
+1. Inheritance: A superclass can have multiple subclasses that inherit its methods and properties. The subclasses can then override and modify the inherited methods as needed.
+
+2. Interfaces: Two classes can implement the same interface, giving them a common set of methods and properties. This allows them to be used interchangeably based on the context.
+
+3. Method Overloading: A class can have multiple methods with the same name but different parameters. Depending on the parameters passed, the appropriate method will be called.
+
+4. Duck Typing: This is a concept in dynamic programming languages where an object's type is determined by its behavior rather than its class.",971,153,182
+15,"Polymorphism refers to the ability of an object to take on many forms. In object-oriented programming, it is often achieved through inheritance and method overriding. 
+
+For example, in Java, we can create a parent class called ""Animal"" and then create child classes such as ""Dog,"" ""Cat,"" and ""Bird"" that inherit behaviors from ""Animal."" Each child class can also have its own unique behaviors, and all of these classes can be stored in a single array or list of type ""Animal."" This allows us to write code that can handle any type of animal object without knowing which specific class it belongs to.
+
+Another example is in the use of interfaces in Java. Interfaces provide a way for classes to implement a set of behaviors without needing to inherit from a specific parent class. This allows for even more flexibility in handling different types of objects. 
+
+Overall, polymorphism allows for more efficient and flexible coding by reducing redundancy and allowing for easy modification and expansion of the code in the future.",1026,170,200
+16,"Polymorphism is the ability of an object to take on many forms or perform different actions depending on the context. In programming, polymorphism is achieved through inheritance and interfaces.
+
+For example, consider a parent class ""Animal"" with two subclasses ""Dog"" and ""Cat"". Each of the subclasses may have a different implementation for a common method ""speak()"". 
+
+Another example is the use of interfaces in Java. Different classes can implement the same interface and have unique implementation for the methods defined in the interface.
+
+Polymorphism helps in creating flexible and efficient code. It enables objects to be used in a variety of ways, reducing the need for repetitive code and increasing code reusability.",728,112,139
+17,"Polymorphism is a concept in object-oriented programming that refers to the ability of objects of different classes to be treated as if they were of the same class. In other words, it allows different objects to be used interchangeably.
+
+One example of polymorphism is with inheritance, where a subclass can inherit and override the methods and properties of its superclass. This allows different objects of different classes to be used in the same way. For example, a parent class ""Animal"" can have subclasses like ""Dog,"" ""Cat,"" and ""Bird."" Even though they are all different types of animals, they can be treated the same way in some cases, such as being fed or making noise.
+
+Another example of polymorphism is with interfaces, where multiple classes can implement the same interface and provide their own implementation for it. This allows for different types of objects to be used interchangeably, as long as they implement the same interface. For example, the ""IComparable"" interface in .NET allows different classes to be compared to each other, as long as they implement the same method for comparison.",1110,181,217
+18,"Polymorphism is a key concept in object-oriented programming that refers to the ability of objects to take on many forms or shapes. In simple words, it means that objects of different classes can be used interchangeably if they have a common interface or parent class.
+
+One of the best examples of polymorphism is the use of inheritance in object-oriented programming. When a base class defines certain methods, any class that inherits from that base class can use those methods, and the child classes can also override these methods with their own implementation.
+
+Another example is the use of a method with multiple arguments, where different objects can take different types of argument and still produce the desired output. For example, in a program that involves different types of shapes, the same method that calculates the area of a rectangle can also be used to calculate the area of a square or a triangle, as long as these shapes implement the same interface.
+
+Overall, polymorphism is a powerful tool that makes code more modular, reusable, and scalable. It helps developers write more flexible and dynamic code that can handle various scenarios, without having to write specific code for each one.",1211,199,225
+19,"Polymorphism refers to the ability of objects to take on multiple forms or have multiple behaviors based on the context in which they are used. It is an important concept in object-oriented programming.
+
+A common example of polymorphism is the method ""draw"" in graphics programming. Different objects representing different shapes (such as circles, squares, triangles) can all have a ""draw"" method, but the implementation of that method will differ depending on the shape of the object. Another example is the ""+"" operator in programming. Depending on the types of the operands (e.g. integers, strings, etc.), the ""+"" operator will exhibit different behaviors. Polymorphism makes it easy to reuse code and makes programs more modular and maintainable.",751,116,145
+20,"Polymorphism is a concept in Object-Oriented Programming (OOP) that enables objects of different classes to be treated as if they belong to a common parent class. It allows for the creation of code that can work with multiple object types and still produce the same results.
+
+Examples of polymorphism include:
+
+1. Method Overloading: This is when multiple methods have the same name but different parameters. The compiler will analyze the parameters passed to the method and choose the correct one to execute.
+
+2. Method Overriding: This is when a method in a child class has the same name and parameters as the parent class, but the implementation is different. The child class method will be executed instead of the parent class method.
+
+3. Interface Implementation: Multiple classes can implement the same interface and each class will have its own implementation of the interface methods.
+
+4. Inheritance: Child classes can inherit methods and properties from a parent class, but can also add their own implementation to it.
+
+Overall, polymorphism enables code to be more flexible, reusable, and easier to maintain.",1119,179,215
+21,"Polymorphism is a concept in object-oriented programming where objects of different types can be treated as if they are of the same type. This allows for more flexible and modular code where different objects with varying properties and behaviors can be used interchangeably. 
+
+An example of polymorphism is with classes that implement a common interface. For instance, a program might have a Shape interface with methods for calculating area and perimeter that are implemented by various shape classes like Circle, Square, and Triangle. Each of these classes has its own properties and methods, but they can all be treated as a Shape type and used in methods that expect a Shape object.
+
+Another example of polymorphism is with inheritance hierarchies, where subclasses inherit properties and behaviors from their parent class but can also add or override them. For example, a program might have a Food class with properties like name and calories, and subclasses like Fruit, Meat, and Vegetables that inherit those properties but also have their own unique properties and methods. These subclasses can be treated as Food objects and used in methods that expect a Food type, allowing for greater flexibility and modularity in the code.",1236,198,227
+22,"Polymorphism is a programming concept where objects of different classes are able to be used interchangeably whenever they share common methods and properties. 
+
+One example of polymorphism in Java is the use of inheritance, where a child class can inherit methods and properties from a parent class. For instance, an Animal class may have a method called ""eat()"", and a Cat class that inherits from the Animal class could use that same method with the same functionality.
+
+Another example is implementing an interface, where multiple different classes can implement the same methods declared in the interface. This allows for flexibility in programming and enables the same method to be used in different ways by different classes. 
+
+In both cases, polymorphism allows for greater abstraction and reusability of code by allowing objects to be manipulated without requiring knowledge of the specific class they belong to.",921,144,165
+23,"Polymorphism is a programming concept that allows objects of different classes to be treated as if they are objects of the same class, through the use of inheritance and/or interfaces. This means that, for example, a method can accept a parameter of a certain class, but can also accept objects of classes that inherit from that class or implement its interface. 
+
+A common example of polymorphism is the use of a List object in C#. This object can contain objects of any type, as long as they inherit from the ""object"" base class. Another example is the use of abstract classes and interfaces, which allow objects of different types to be treated as if they were objects of the same class based on their shared methods and properties. 
+
+Another example of polymorphism is seen in method overloading. This is when multiple methods with the same name are created, but with different parameters. This allows for different behaviors based on the data being passed to the method. 
+
+Overall, polymorphism allows for increased flexibility and modularity in programming, as it enables code to be written in a way that can handle multiple types and behaviors, without needing to know the specific type at compile-time.",1210,202,235
+24,"Polymorphism is a concept in object-oriented programming where objects of different classes can be treated as if they are objects of the same class. This means that a method can have different behaviors depending on the object that calls it. 
+
+For example, in a program that simulates different shapes, you might have a method called ""area"" that calculates the area of a shape. The method would work differently depending on the type of shape it is called on. If it is called on a rectangle object, the area would be calculated as length multiplied by width. If it is called on a circle object, the area would be calculated as pi multiplied by the square of its radius. 
+
+Another example is the ""+"" operator in Python, which can be used to add integers, concatenate strings, and merge lists. This is possible because the ""+"" operator is defined as a polymorphic method for these different types of objects.",906,157,181
+25,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were objects of the same class. In other words, it is the ability of objects to take on many forms.
+
+One example of polymorphism is method overloading. This means that a class can have multiple methods with the same name, but different parameters. The method that will be called depends on the type and number of parameters that are passed.
+
+Another example is method overriding. This occurs when a child class provides its own implementation of a method that is already present in its parent class.
+
+An example of polymorphism in Java is the use of inheritance. The `Object` class is the parent class of all other classes in Java, so any object in Java can be treated as an instance of the `Object` class. This means that methods like `toString()` and `equals()` can be called on any object in Java.
+
+Overall, polymorphism allows for more flexible and reusable code by enabling objects to be used in multiple different contexts.",1052,179,209
+26,"Polymorphism is the concept of using the same code or method in different ways, depending on the specific class or type of data being used. In other words, it allows objects of different types to be treated as if they were the same type. 
+
+One common example of polymorphism is the ""+"" operator. Depending on the data types of the operands, it can add numbers, concatenate strings, or merge lists.
+
+Another example is the method `draw()` in a shape class. Each shape subclass (circle, square, triangle) can have its own implementation of the method, but they all share the same name and can be called using polymorphism.",620,107,130
+27,"Polymorphism is the ability of an object or function to take on many forms. It allows a single method, class, or object to behave in different ways depending on the context in which it is used. Here are a few examples:
+
+1. Method overloading: A single function name can be used to perform different tasks depending on the arguments it gets. For example, a method named calculate() can be used to add two integers or multiply two floating-point numbers.
+
+2. Inheritance: A child class can inherit attributes and methods from a parent class and override or add its own methods. A Shape class can have child classes like Triangle, Square, and Circle that inherit the parent Shape class but have their own area() and perimeter() methods.
+
+3. Interfaces: Interfaces define a set of methods that a class must implement. For example, a class named Bird can implement the Flyable interface, which requires the class to have a fly() method.
+
+In all of these cases, polymorphism allows us to write more reusable and flexible code, saving time and improving code quality.",1060,180,216
+28,"Polymorphism is a concept in Object-Oriented Programming that allows objects of different types to be processed as if they were of the same type, providing a way to write code that'll work on a group of related classes as if they were the same class. This means that a single method can perform different actions based on the type of object it is being called on. 
+
+For example, let's say we have a superclass called Animal, and two subclasses called Dog and Cat. We can create a polymorphic method called makeSound() within the Animal class, which can be overridden by Dog and Cat classes to produce different sounds, like barking and meowing, respectively. Now we can create an array of Animal objects, which can hold both Dog and Cat types, and iterate over them to call the makeSound() method. This allows us to process different types of objects with the same method.
+
+A real-world example of polymorphism is the compareTo() method used to sort objects in Java. The method is used to sort objects of different types by comparing their values, and can be implemented in the Comparable interface by any object which belongs to a class that requires sorting.",1160,200,235
+29,"Polymorphism means the ability of an object to take on different forms or behaviors. In programming, this refers to the ability of an object or method to take on different forms depending on the context or conditions.
+
+One common example of polymorphism is in object-oriented programming languages, where a subclass can inherit and override methods from its parent class. This means that the same method can behave differently depending on the object that is calling it.
+
+Another example of polymorphism is function overloading, where multiple functions with the same name but different signatures can be defined. This allows a single function name to be used to perform different operations based on the arguments passed to it.
+
+Interfaces also provide a level of polymorphism, where different classes can implement the same interface and have their own implementations of the methods defined in that interface.",912,143,161
+30,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were objects of the same class. In other words, it refers to the ability of objects to take on different forms, depending on how they are being used.
+
+One example of polymorphism is method overloading, where a single class has multiple methods with the same name, but different parameters. This allows the class to perform different actions based on the arguments that are passed in. Another example is method overriding, where a subclass provides its own implementation of a method that is already defined in its parent class.
+
+Another example of polymorphism is interface implementation, where different classes can implement the same interface, thus allowing them to be used interchangeably wherever the interface is expected. For instance, a program may have several classes that implement the Shape interface, each representing a different geometric shape. The program can then treat all of these shapes as if they were instances of the same class, and call methods on them as needed.",1112,178,203
+31,"Polymorphism is the ability of objects to take on different forms and behaviors depending on the context in which they are used. It is one of the key features of object-oriented programming.
+
+An example of polymorphism could be a car, which is an object that can take on different forms and behaviors depending on the context in which it is used. The same car can be used for transportation, racing, or off-road driving, but its form and behavior will be different in each context.
+
+Another example of polymorphism could be a parent class with multiple child classes that inherit some of the parent's methods and properties while implementing their own specific methods and properties. For instance, you could have a Shape class with child classes like Circle, Rectangle, and Triangle, each with their own unique methods and properties for calculating their respective areas and perimeters.",890,145,167
+32,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were objects of the same class. It enables a single method or function to be applied to different types of objects, without having to know the specific type in advance. Here are some examples of polymorphism in use:
+
+1. Method overriding: When a subclass provides its own implementation of a method that is already present in its parent class, it is called method overriding. For instance, Java’s toString() method can be overridden by any class to provide its own string representation of an object.
+
+2. Method overloading: When a class has multiple methods with the same name, but different parameters or argument types, it is called method overloading. For instance, in Java, the Math class has overloaded methods for calculating the maximum value of two or more numbers, depending on the number of arguments passed.
+
+3. Interfaces: In Java and other languages supporting interfaces, polymorphism is achieved through the implementation of interfaces. An interface defines a set of methods that a class must implement, allowing objects of different classes implementing that interface to be treated as if they were objects of the same interface.
+
+4. Inheritance: When a subclass inherits a method from its parent class, it can be used to perform polymorphic behavior. For instance, if a Car class inherits a drive() method from its Vehicle parent class, any subclass of Car (e.g., SportsCar or Sedan) can use the drive() method to perform its own unique implementation of driving behavior.",1614,260,311
+33,"Polymorphism is a concept in object-oriented programming where objects of different classes can be treated as if they are objects of the same class, thereby providing a flexible and adaptive design.
+
+Here are some examples of how polymorphism can be used:
+
+1. Method overloading: a class can have multiple methods with the same name but different parameters. The appropriate method is chosen based on the types of arguments passed.
+
+2. Inheritance: a subclass can override a method of its superclass to have its own implementation.
+
+3. Interfaces: multiple classes can implement the same interface and provide their own unique implementation of the methods defined in the interface.
+
+4. Generic Programming: a single generic method or class can be used with multiple data types, saving programming time and making code easier to maintain. 
+
+Overall, polymorphism helps to simplify code and makes it easier to extend and modify in the future.",941,149,176
+34,"Polymorphism is the principle of designing objects to share behaviors or have multiple forms while maintaining a unified interface. It is an object-oriented programming feature that allows objects of different classes to be treated as if they were of the same class.
+
+For example, a parent class Animal can have multiple child classes such as Dog, Cat, and Elephant. Each child class can have its own implementation of a method such as makeSound(). However, when called upon by an object of Animal type, each child class will return its own unique sound but through the same method interface.
+
+Another example of polymorphism in programming would be method overloading. In method overloading, methods with the same name can be created but with different parameters. For example, a method named add() could take two integers as parameters or two decimal numbers as parameters. It is a way of providing flexibility to the user while keeping the method name consistent.",966,157,181
+35,"Polymorphism is the ability of objects of different classes to be used interchangeably because they implement the same methods or have the same function signatures. It allows for more flexibility and avoids code duplication.
+
+For example, in Java, polymorphism can be achieved through inheritance and interface implementation. A parent class can have a method that is overridden by its child classes. When an instance of the child class calls this method, it will execute the child class's implementation. An interface can also define a common set of methods that any class implementing that interface must have, allowing objects of different classes to be used interchangeably.
+
+Another example is in the use of generics in C#. A generic class or method can work with different types of data without having to rewrite the code for each type.",842,136,154
+36,"Polymorphism is the ability of an object in object-oriented programming to take on many forms. It allows objects of different classes to be treated as if they were objects of the same class. 
+
+One example of polymorphism is with the use of method overloading. With method overloading, a class can have multiple methods with the same name but different parameters, allowing the methods to be called with different arguments. 
+
+Another example is with method overriding. In this case, a subclass can provide its own implementation of a method that is already defined in its parent class. This allows for different behavior depending on the object's type.
+
+Polymorphism can also be seen in interfaces, which allow objects from different classes to be used interchangeably if they implement the same interface. 
+
+Overall, polymorphism allows for more flexible and reusable code as objects can be used in a variety of situations, making programming more efficient and scalable.",972,154,183
+37,"Polymorphism is one of the key concepts of object-oriented programming (OOP) and refers to the ability of an object to take on many forms. In simple terms, it means that different objects can be treated as if they were the same type of object. There are two types of polymorphism: static and dynamic. 
+
+Static polymorphism, also known as method overloading, occurs when two or more methods in a class have the same name but different parameters. The correct method to be executed is determined at compile time based on the number, type, and order of the arguments passed to it.
+
+Example: The ""+"" operator in Java can add two integers or concatenate two strings, depending on their type.
+
+Dynamic polymorphism, also known as method overriding, occurs when a subclass provides a specific implementation of a method that is already defined in its parent class. The correct implementation to be executed is determined at runtime based on the actual type of the object.
+
+Example: The draw() method in a Shape class can be overridden in its child classes like Circle, Rectangle, etc, to implement their own unique way of drawing the shape.",1133,191,226
+38,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were objects of the same class. In simple terms, polymorphism refers to the ability of an object to take on many forms.
+
+There are two types of polymorphism: compile-time polymorphism and runtime polymorphism.
+
+Compile-time polymorphism is also known as method overloading. This allows multiple methods with the same name but different parameters to coexist in the same class.
+
+Example:
+
+```
+public class Calculator {
+   public int add(int x, int y) {
+      return x + y;
+   }
+   
+   public double add(double x, double y) {
+      return x + y;
+   }
+}
+```
+
+Here, two methods with the same name ‘add’ are defined. But they differ in the number and types of their parameters.
+
+Runtime polymorphism is also known as method overriding. With this, a child class can override a method in its parent class to provide its implementation.
+
+Example:
+
+```
+public class Animal {
+   public void makeSound() {
+      System.out.println(""Animal is making a sound"");
+   }
+}
+
+public class Cat extends Animal {
+   public void makeSound() {
+      System.out.println(""Meow"");
+   }
+}
+
+public class Dog extends Animal {
+   public void makeSound() {
+      System.out.println(""Bark"");
+   }
+}
+```
+
+Here, the Animal class has a makeSound() method. The Cat and Dog classes inherit from the Animal class and override the makeSound() method to provide their implementation.",1465,226,314
+39,"Polymorphism is a key concept in object-oriented programming that refers to the ability of objects of different classes to be treated as if they are objects of a single parent class. This enables different objects to be used interchangeably, as they share common interfaces and can respond to a single method call in different ways.
+
+For example, suppose we have a parent class called `Animal`, which has many sub-classes such as `Dog`, `Cat`, `Horse`, etc. Each sub-class may have its own unique methods and attributes, but they all share common methods defined in their parent class. This allows us to create a method such as `makeSound()` in the parent `Animal` class, which can be implemented differently in each sub-class. Therefore, when we call the `makeSound()` method on any object of the `Animal` class, we get different sounds depending on the type of animal object.
+
+Another example of polymorphism is the use of the `+` operator in Python. The `+` operator can be used to add two numbers or concatenate two strings, depending on the types of the operands. This is because both integers and strings are types of objects in Python and can be treated as objects of a common parent class such as `object`.",1214,205,254
+40,"Polymorphism is a concept in object-oriented programming that allows different types of objects to be used interchangeably, while providing a common interface for all of them. In other words, polymorphism allows you to use a single name that can refer to objects of different classes that share the same behavior.
+
+One example of polymorphism is the “shape” example used in many programming tutorials. In this example, you have different classes that represent shapes, such as square, circle, and triangle. These classes would have their own methods for calculating area, perimeter, and other properties. However, because they all share the same interface (e.g., a method called `calculateArea()`), you can create an array of different shape objects and call the same method on all of them.
+
+Another example of polymorphism is seen in the “animal” example, where you can have a parent class called “Animal” and multiple child classes like “Dog”, “Cat”, and “Bird”. Although each animal has its own unique characteristics (e.g., a dog can bark, a cat can meow), they all share common behaviors like “eating”, “sleeping”, and “moving”. So, by creating a list of animals, it’s possible to call the same methods on all the different types of animals in the list.",1258,203,262
+41,"Polymorphism is a principle of object-oriented programming, which allows objects of different classes that share a common interface to be treated as if they were instances of a single class. In other words, polymorphism allows different objects to be treated interchangeably based on their shared abilities.
+
+One example of polymorphism is the method overriding in inheritance. When a subclass inherits from a superclass, it can override the superclass's methods with its own implementation, but still use the same method name. This allows the subclass to share the same interface with the superclass, which simplifies the code and allows for greater flexibility.
+
+Another example of polymorphism is the use of interfaces in Java. An interface defines a set of methods that a class must implement, but the implementation of these methods can vary between different classes. This allows multiple classes to have the same interface, but behave differently based on their own specific implementation.
+
+Lastly, the use of function overloading in programming is also an example of polymorphism. This allows functions with the same name but different parameters to be defined, so that different versions of the same function can operate on different data types or take varying amounts of input.",1288,200,230
+42,"Polymorphism is the ability of an object or method to take on many forms. 
+
+In object-oriented programming, polymorphism allows a subclass to inherit methods and properties from its parent class, but also to override them and provide its own implementation. This can make code more flexible, reusable, and easier to maintain.
+
+For example, suppose we have a parent class called Animal, and two subclasses called Dog and Cat. Both of these subclasses inherit certain properties and methods from the Animal class (such as a name and a move method), but they also have their own unique properties and methods (such as a bark method for Dog and a purr method for Cat).
+
+Another example would be the use of a single method to handle multiple types of data. For instance, in a graphics program, a draw() method could be used to draw different shapes such as circles, squares, and triangles, by passing different types of objects to the method. This is an example of method overloading, which is a type of polymorphism.",1012,172,204
+43,"Polymorphism is a concept in object-oriented programming that refers to the ability of objects to take on multiple forms or behaviors within a single class hierarchy. In other words, polymorphism allows different objects to respond to the same message or method call in different, specialized ways.
+
+One common example of polymorphism is method overloading in Java, where multiple methods can have the same name but different parameters. For example, a calculator class may have a method called ""add"" that can take two integers or two doubles as arguments, allowing the same method name to be used for different data types.
+
+Another example of polymorphism is method overriding, which allows a subclass to provide a different implementation of a method that is already defined in its superclass. For instance, an animal class may have a method called ""makeSound,"" and a subclass of that animal like a dog or cat can override that method to produce a bark or meow sound, respectively. 
+
+In general, polymorphism allows for increased flexibility and extensibility in code, since objects can exhibit different behaviors or characteristics depending on the context in which they are used.",1184,188,222
+44,"Polymorphism is a concept in object-oriented programming that refers to the ability of objects to take multiple forms or perform different behaviors depending on the context in which they are used.
+
+One example of polymorphism in programming is method overloading. This is when a class has multiple methods with the same name but different parameter lists. Depending on the arguments passed in when calling the method, a different version of the method will be executed.
+
+Another example is inheritance. A subclass can inherit properties and methods from its superclass but can also override or modify them to behave differently in specific contexts.
+
+Interfaces also allow for polymorphism. Multiple classes can implement the same interface, allowing them to be used interchangeably in code that expects an object of that interface type.
+
+Polymorphism can provide flexibility and efficiency in programming by allowing for code reuse and reducing the need for repetitive and redundant code.",990,152,172
+45,"Polymorphism is a concept in object-oriented programming (OOP) where objects of different classes can be treated as objects of the same parent class. In other words, it is the ability of objects belonging to different classes to be treated as if they are from the same class.
+
+Here are some examples of the usage of polymorphism:
+
+1. Method overriding: This is a scenario where a derived class overrides a method from its parent class with its own implementation. When this happens, the derived class can be treated as if it is an instance of the parent class. For example, in Java:
+
+```
+class Animal {
+  public void makeSound() {
+    System.out.println(""Animal is making a sound"");
+  }
+}
+
+class Dog extends Animal {
+  @Override
+  public void makeSound() {
+    System.out.println(""Dog is barking"");
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Animal animal = new Dog(); // Polymorphism in action
+    animal.makeSound(); // Output: Dog is barking
+  }
+}
+```
+
+2. Method overloading: This is when multiple methods within the same class have the same name but different parameters. The object decides which method to call based on the types and number of arguments passed to it. For example, in Python:
+
+```
+class Calculator:
+  def add(self, num1, num2):
+    return num1 + num2
+    
+  def add(self, str1, str2):
+    return str1 + str2
+    
+# Polymorphism in action  
+calculator = Calculator()
+print(calculator.add(2,3)) # Output: 5
+print(calculator.add(""Hello "", ""World"")) # Output: Hello World
+```
+
+3. Abstract classes and interfaces: These are special types of classes in OOP that cannot be instantiated. Instead, they are meant to be inherited by other classes, which must provide their own implementation for any abstract methods defined in the parent class or interface. This allows objects of different classes to be treated as if they are from the same abstract parent class or interface. For example, in Java:
+
+```
+public interface Shape {
+  public double getArea();
+}
+
+public class Circle implements Shape {
+  private double radius;
+
+  public Circle(double radius) {
+    this.radius = radius;
+  }
+
+  @Override
+  public double getArea() {
+    return Math.PI * radius * radius;
+  }
+}
+
+public class Rectangle implements Shape {
+  private double width;
+  private double height;
+
+  public Rectangle(double width, double height) {
+    this.width = width;
+    this.height = height;
+  }
+
+  @Override
+  public double getArea() {
+    return width * height;
+  }
+}
+
+public class Main {
+  public static void main(String[] args) {
+    Shape shape1 = new Circle(5); // Polymorphism in action
+    Shape shape2 = new Rectangle(3, 4); // Polymorphism in action
+    
+    System.out.println(shape1.getArea()); // Output: 78.53981633974483
+    System.out.println(shape2.getArea()); // Output: 12.0
+  }
+}
+```",2820,422,649
+46,"Polymorphism is a term used in object-oriented programming to refer to the ability of an object to take on many forms. It basically means that different objects can share the same interface or methods, but have different implementations.
+
+There are two types of polymorphism: compile-time polymorphism (or method overloading) and runtime polymorphism (or method overriding). The former refers to having multiple methods with the same name but different parameters, while the latter refers to creating a method in the subclass with the same name and parameters as the one in the superclass.
+
+Here are some examples of polymorphism in use:
+
+1. Method overloading: A class may have multiple methods with the same name but different parameters. For example, a calculator class may have a method called ""add"" that takes two integers, and another method called ""add"" that takes two double values.
+
+2. Method overriding: A subclass can define a method with the same name and parameters as the one in the superclass, but with a different implementation. For example, a ""Shape"" class may have a method called ""draw"" that simply prints ""Drawing a shape,"" while a subclass called ""Rectangle"" may override the ""draw"" method to actually draw a rectangle.
+
+3. Interfaces: An interface defines a set of methods that a class implementing it must provide. This allows different classes to share the same interface and be used interchangeably. For example, a ""Flyable"" interface may define a ""fly"" method that can be implemented by classes like ""Bird,"" ""Airplane,"" etc.",1551,248,312
+47,"Polymorphism is a fundamental feature of object-oriented programming, which allows different objects to be treated as if they are the same type. This means that different objects can be used interchangeably, even if they have different implementations. In other words, it involves the use of a single interface to represent different types of objects.
+
+One common example of polymorphism is the use of inheritance, where a subclass can be treated as an instance of its superclass. For example, if we have a class called ""Animal"" and subclasses of ""Cat"", ""Dog"", and ""Bird"", all of these can be treated as ""Animal"" objects when necessary, such as when calling a method that takes an ""Animal"" object as a parameter.
+
+Another example is method overloading, where multiple methods with the same name but different parameters can be defined. For example, we might have a ""calculateArea"" method that can take different shapes as parameters, such as a rectangle, circle, or triangle.
+
+Polymorphism also applies to interfaces, which define a set of methods that must be implemented by any class that implements the interface. This allows objects of different classes to be treated as if they have the same behavior, even if their implementations are different.",1251,201,246
+48,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were of the same class. This means that different objects can be used interchangeably, even if their specific implementation details are different. 
+
+An example of polymorphism in programming is the use of a parent class to create multiple child classes, each with their own specific implementation. For instance, a parent class ""Animal"" could have child classes like ""Dog"", ""Cat"", and ""Bird"". All of these classes could have their own unique methods and variables, but they could also share common methods or variables defined in the parent ""Animal"" class. This would allow a program to treat all of these objects as ""Animals"", even though they may have different behaviors, such as making different sounds or having different types of fur or feathers.
+
+Another example of polymorphism in programming is the use of interfaces. Interfaces define a set of methods that must be implemented by any class that inherits from them. This allows different classes to have their own unique implementation of those methods, but also allows them to be treated interchangeably when they share the same interface. 
+
+Overall, polymorphism is a powerful tool that allows developers to create modular, flexible code that can easily adapt to changing requirements or new features.",1386,219,259
+49,"Polymorphism is the ability of an object to take on many forms. In object-oriented programming languages such as Java, polymorphism allows objects of different classes that are related by inheritance to be treated as if they are objects of the same class.
+
+One common example of polymorphism is with the use of the Java method overloading feature. This allows a single method name to be used for multiple methods that have different parameters. For example, there can be multiple print methods with different parameter types such as int, double, and String.
+
+Another example of polymorphism is with the Java interface. The interface specifies a set of methods that a class must implement. This allows different classes that implement the same interface to be treated as if they are objects of the same type. For example, the Comparable interface in Java can be implemented by different classes to enable them to be compared with each other using the same method.",962,159,180
+50,"Polymorphism is a programming concept that describes the ability of objects of different types to be used interchangeably without modifying the code that uses them. It allows the same method or operation to be applied to different objects, allowing for greater flexibility and reusability of code.
+
+An example of polymorphism in action is the use of the ""+"" operator in programming languages such as Java. The ""+"" operator can be used to perform addition between two numbers, but it can also be used to concatenate strings. This is possible because the ""+"" operator has been overloaded to work with both numeric and string data types.
+
+Another example is the use of inheritance in object-oriented programming. When a derived class inherits from a base class, it can override or extend the methods of the base class to provide its own implementation. Then, the same method or operation can be called on both the base and derived classes, yet produce different results depending on the specific object being operated upon.",1020,168,188
+51,"Polymorphism is the ability of an object or variable to take on different forms or types. In programming, it refers to the concept of using a single function, method, or interface to handle multiple types of data. 
+
+For example, in object-oriented programming, we can define a base class and then create derived classes that inherit from the base class. Each derived class has its own implementation of the methods in the base class, but they can all be accessed using the same interface. 
+
+Another example of polymorphism is function overloading. This allows us to define multiple functions with the same name, but different parameters. The appropriate function is called based on the type and number of arguments passed to it.
+
+Polymorphism is a powerful concept that allows developers to write more generic and reusable code, improving efficiency and reducing redundancy.",874,140,165
+52,"Polymorphism refers to the ability of an object to take multiple forms or behaviors based on its context. It allows objects with different structures to be treated as if they have the same structure, which in turn can simplify coding, maintenance and testing.
+
+A common example of polymorphism is method overloading. For instance, a method named ""calculate area"" can be written to accept different parameters, such as length and width or radius, resulting in differing behaviors based on the input. This flexibility in usage is made possible by providing several methods of the same name with different argument types.
+
+Another example of polymorphism is inheritance. When a class inherits from a parent or base class, it can extend and modify the behavior of the parent class or implement its own behavior. At the same time, the code still refers to an object of the parent class, treating it as if it contains the extension or modification implemented in the child class.
+
+Finally, interfaces are another example where polymorphism is in play. Interfaces contain only abstract methods, which do not have any implementation details, and classes that implement the interface must provide their own implementation. This way, code can refer to a group of objects through their interface type, without worrying what the actual implementation is.",1342,215,247
+53,"Polymorphism is the ability of an object or method to take on multiple forms or behaviors. It allows for code to be written in a more flexible and generic way, making it easier to reuse and maintain.
+
+One example of polymorphism is method overloading, where multiple methods can have the same name but different parameters. This allows for different actions to be performed depending on the inputs.
+
+Another example is inheritance, where a child class can inherit the properties and methods of a parent class but also have its own unique properties and methods. This allows for the child class to behave differently from the parent class while still sharing some common behaviors.
+
+Finally, interfaces and abstract classes also utilize polymorphism. An interface or abstract class can specify a set of methods that must be implemented by any class that implements or extends them. This allows for a more generic way of coding, as code can be written to operate on any class that implements a particular interface or extends a particular abstract class.",1052,174,193
+54,"Polymorphism is a concept in object-oriented programming that enables objects of different classes to be treated as if they were of the same class. This is achieved through inheritance or interface implementation, where subclasses or implementing classes have the same methods or properties as the parent or interface.
+
+An example of polymorphism is a program that has a superclass ""Animal"" with subclasses ""Dog"", ""Cat"", and ""Bird"". Each subclass implements the same method ""makeSound()"", but with different implementations based on the specific animal. The program can then create a list of ""Animal"" objects and call the ""makeSound()"" method on each object, which will invoke the appropriate implementation for each subclass.
+
+Another example is in Java's ""Collection"" interface, which is implemented by various classes such as ""ArrayList"", ""LinkedList"", and ""HashSet"". Although they have different implementations, they all have the same methods and can be treated as a ""Collection"" object. This allows for flexibility in coding, as the programmer can choose the implementation that best fits the specific use case.",1117,167,209
+55,"Polymorphism is a feature in object-oriented programming languages that allows objects of different classes to be treated as if they are of the same class. In other words, it allows objects to have different forms or behaviors. There are two types of polymorphism: compile-time polymorphism (also known as method overloading) and run-time polymorphism (also known as method overriding).
+
+Example of compile-time polymorphism: 
+
+In Java, it is possible to have two methods with the same name in the same class, as long as the number or types of the parameters differ. This is known as method overloading. For example:
+
+```
+public void print(int x) {
+    System.out.println(""The value of x is: "" + x);
+}
+
+public void print(float x) {
+    System.out.println(""The value of x is: "" + x);
+}
+```
+
+Example of run-time polymorphism:
+
+In Java, it is possible to have a method in a superclass that is overridden in a subclass, and when the method is called on an object of the subclass, the overridden method is called instead of the superclass method. This is known as method overriding. For example:
+
+```
+class Animal {
+    public void makeSound() {
+        System.out.println(""The animal makes a sound."");
+    }
+}
+
+class Dog extends Animal {
+    public void makeSound() {
+        System.out.println(""The dog barks."");
+    }
+}
+
+Animal animal1 = new Animal();
+Animal animal2 = new Dog();
+
+animal1.makeSound(); // prints ""The animal makes a sound.""
+animal2.makeSound(); // prints ""The dog barks.""
+```",1489,234,329
+56,"Polymorphism is the ability of an object or a function to take on many forms. In programming, polymorphism allows objects of different classes to be treated as if they were objects of the same class. This makes code more versatile and reusable, and it enhances the flexibility of object-oriented programming.
+
+Here are a few examples of polymorphism in programming:
+
+1. Overloading: A function that can perform different operations based on the data types or number of arguments it receives. For example, the ""+"" operator can perform addition of two numbers or concatenation of two strings.
+
+2. Interface implementation: Two classes that implement the same interface can be used interchangeably in the code, even though their actual behavior is different. For example, a shape interface can be implemented by multiple classes, such as circle, square, and rectangle, that all have different behaviors.
+
+3. Inheritance: A subclass can override or extend the methods and properties of its parent class, providing its own implementation of the same method. For example, a subclass of a vehicle class, such as car or bike, can override the move method to provide its own implementation of movement.",1193,190,228
+57,"Polymorphism is an object-oriented programming concept that refers to the ability of objects to take on multiple forms, depending on the context in which they are used. In simpler terms, it means that an object can behave in different ways depending on the situation.
+
+There are two types of polymorphism: compile-time polymorphism (also known as method overloading), and runtime polymorphism (also known as method overriding).
+
+An example of compile-time polymorphism is when a class has multiple methods of the same name, but with different parameters. The correct method to be called is determined at compile time based on the number and types of the arguments passed to it. For instance, the ""+"" operator in Java can be used to add integers, concatenate strings, or even perform other operations with different data types.
+
+An example of runtime polymorphism is when a subclass overrides a method in its parent class, providing its own implementation. When a method is called on an object of the subclass, the overridden method in the subclass is executed instead of the method in the parent class. For instance, a ""Shape"" class can have a method to calculate the area, while subclasses like ""Circle"" or ""Rectangle"" can provide their own implementation to calculate the area based on their specific shapes.
+
+Overall, polymorphism allows for code that is more flexible, reusable, and easier to maintain.",1406,226,271
+58,"Polymorphism is a programming concept where objects of different types can be treated as if they are of a uniform type, allowing code to be reused across multiple objects with varying properties. 
+
+One example of polymorphism is method overloading in Java. This allows multiple methods with the same name to exist in the same class, but with different parameter types or quantities. For example, a class may have multiple methods called ""print"" that accept different types of data, such as integers or strings. 
+
+Another example is interface implementation in Object-Oriented Programming. This allows multiple classes to implement the same interface, which means they can be treated as the same type even though they have different properties. For example, an interface called ""Shape"" could be implemented by both a ""Circle"" and a ""Square"" class, allowing them both to be treated as a ""Shape"" in certain parts of the code.",922,148,181
+59,"Polymorphism is a concept in object-oriented programming that allows objects to take on different forms or behaviors based on the context in which they are used. In other words, polymorphism allows different objects to be treated as though they are the same type of object.
+
+One example of polymorphism is the ability of different shapes, such as circles and squares, to be treated as though they are both shapes with a common set of properties and behaviors. Another example is the concept of overloading methods, where the same method name can be used to perform different actions based on the parameters passed to it.
+
+Polymorphism is also commonly used in inheritance, where a child class can inherit the properties and behaviors of a parent class, while also adding its own unique properties and behaviors. This allows objects to be treated as though they are different classes, even though they are related through inheritance.",933,153,174
+60,"Polymorphism is a concept in object-oriented programming that refers to the ability of objects of different data types to be treated as if they were of the same data type. This means that different objects can be used interchangeably, as long as they share a common interface or base class.
+
+A common example of polymorphism is the use of the ""+"" operator in programming languages. The ""+"" operator can be used to add numbers, concatenate strings, or combine lists, even though these data types have different underlying implementations.
+
+Another example of polymorphism is the use of inheritance in object-oriented programming. A subclass can inherit and override methods and properties from its superclass, and can be treated as a superclass object in code, allowing for more flexible and scalable code design.",812,130,149
+61,"Polymorphism is the ability of an object to take on many forms, meaning that it can behave in multiple ways based on the context in which it is used. In object-oriented programming, polymorphism is achieved through method overriding and/or method overloading.
+
+Two common examples of polymorphism in programming are:
+
+1. Method Overriding: This is when a subclass provides a specific implementation of a method that is already present in its parent class. This allows the subclass to modify or extend the behavior of the parent class. For example, consider a parent class called ""Animal"" and a subclass called ""Cat"". The ""Cat"" class can override the ""speak"" method of the ""Animal"" class to produce a ""meow"" sound.
+
+2. Method Overloading: This is when a class has multiple methods with the same name, but with different parameters. The correct method is called based on the input argument passed to it. This is useful when you need to perform the same task on different types of inputs. For example, a calculator class might have an ""add"" method that takes two integers as input, and another ""add"" method that takes two doubles as input.",1136,190,237
+62,"Polymorphism is a concept in object-oriented programming where objects of different classes can be treated as if they are of the same type. It allows a single interface to be used for different implementations.
+
+One common example of polymorphism is the use of an interface in Java. An interface defines a set of methods that a class must implement. Any class that implements that interface can be treated as an instance of that interface type. For example, if we have an interface called ""Animal"" that has a method called ""speak"", we could have a class called ""Dog"" that implements the Animal interface and overrides the speak method to bark. We could also have a class called ""Cat"" that implements the Animal interface and overrides the speak method to meow. Both the Dog and Cat classes can be treated as Animal objects, allowing us to write generic code that can work with any type of Animal.
+
+Another example of polymorphism is method overloading. In Java, we can have multiple methods with the same name in a class, as long as they have different parameters. This allows us to use a single method name to perform different actions based on the arguments passed to it. For example, we could have a method called ""calculateArea"" in a Shape class that has different implementations for calculating the area of a rectangle, triangle, or circle. This allows us to write code that calls ""calculateArea"" with different arguments, without needing to know which specific implementation is being used.",1497,252,295
+63,"Polymorphism in programming refers to the ability of a single entity, such as a function or an object, to take on multiple forms. This means that a variable, object, or function can behave in different ways depending on the context in which it is used.
+
+Some examples of polymorphism in programming include:
+
+1. Method Overloading: This involves creating multiple methods with the same name but different parameters. The system will automatically select the appropriate method to execute based on the arguments passed in.
+
+2. Inheritance: A subclass can inherit properties from the parent class and override methods to provide its own implementation. This allows for a single interface to be used for multiple classes.
+
+3. Interfaces: Interfaces are used to define behaviors that objects can implement. This allows for objects of different classes to be treated the same way if they implement the same interface.
+
+4. Operator Overloading: This involves defining operators (+, -, *, /) to work with custom data types. This allows for more natural expressions when working with objects. 
+
+Overall, polymorphism helps to make code more efficient and flexible by allowing for greater code reuse and simplifying code maintenance.",1224,192,228
+64,"Polymorphism is one of the fundamental concepts of object-oriented programming that allows objects of different types to be treated as if they are of the same type, providing flexibility and extensibility to the software structure. In simple words, it means that a single function or a method can take multiple forms depending upon the type of data it is being applied to.
+
+An example of polymorphism is the ""+"" operator in programming languages, which can be used for both arithmetic addition of numbers and for concatenation of strings. Similarly, a method called ""draw"" can be applied to multiple shapes like circles, rectangles, and triangles, where each shape has its own implementation of the method.
+
+Another example is the use of inheritance and interface implementation in OOP. Here, a base class can have multiple derived classes that inherit the same properties and methods but can have different implementations based on their own specific requirements. The same can be achieved by creating an interface that specifies a common set of methods that can be implemented by different classes in their own way.",1117,180,205
+65,"Polymorphism is the ability of an object to take on many forms or shapes. In object-oriented programming, it allows different objects to be treated as if they were the same object, and therefore the same methods can be used on them. 
+
+For example, in a program that deals with different types of shapes, a function called ""area()"" can be defined. Using polymorphism, this function can be called on different shapes, such as a square, a circle or a triangle and it will return the corresponding area for each shape. 
+
+Another example of polymorphism is the concept of inheritance in which a child class inherits properties and behaviors from a parent class. The child class may have its own specialized behavior, but still has access to the parent's methods and properties. 
+
+Polymorphism also applies to interfaces, where different objects can implement the same interface but have different implementations of the methods defined in the interface. This allows programmers to write code that can be reused for different objects without needing to know their specific implementation details.",1090,175,205
+66,"Polymorphism is a term that describes the ability of objects in object-oriented programming to take on many forms. It allows you to use a single interface to represent different types of objects. Polymorphism is useful for creating reusable and flexible code.
+
+Examples of usage of polymorphism include function overloading and method overriding. Function overloading is when multiple functions with the same name are defined in a class, but they have different input parameters. Method overriding is when a subclass provides its own implementation for a method that is already defined in its parent class. Another example of polymorphism is the use of interfaces and abstract classes to provide a common interface to multiple classes that implement them.",755,117,134
+67,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they are of the same type. This allows for more flexible and reusable code.
+
+One example of polymorphism is with the ""+"" operator in Python. The ""+"" operator can be used to add numbers, concatenate strings, and combine lists because it has polymorphic behavior.
+
+Another example of polymorphism is with the ""draw"" function in a graphic design application. The draw function can be used to draw different shapes like a circle, square, or triangle, and each shape class can have different implementations of the draw function. However, the draw function can still be called on any of these shape objects because of polymorphism.",744,121,143
+68,"Polymorphism is a concept in object-oriented programming where objects of different types can be treated as if they are objects of the same type. 
+
+One common example of polymorphism is method overriding, where a subclass provides its own implementation for a method already defined in its superclass. Another example is method overloading, where a class provides multiple methods with the same name but with different parameters. 
+
+For example, in Java, both the String and StringBuilder classes have a method called ""length()"" which returns the length of the string. Even though these two methods have different implementations and are called on objects of different types, they can both be referred to as ""length()"" and used interchangeably in code. This is an example of polymorphism.",788,123,147
+69,"Polymorphism is the ability of an object to take on many forms. It allows different objects to be treated as if they were the same type of object by using a common interface or class. 
+
+For example, imagine a program with a Parent class and two child classes, Child1 and Child2. Both Child1 and Child2 inherit the same properties and methods from Parent but may implement them differently. 
+
+If we create a method in the Parent class that takes an instance of the Parent class as its argument, we can pass either Child1 or Child2 as the argument.
+
+Another example is with the + sign operator in Python. The + sign can be used to add two integers or concatenate two strings. It is polymorphic because the same operator is used for different types of data (integers and strings) with different behaviors.",802,142,167
+70,"Polymorphism is the ability of objects of different classes to be used interchangeably, even if they have different implementations of methods. There are two types of polymorphism: static and dynamic.
+
+Static polymorphism is achieved through method overloading, where multiple methods have the same name but different parameters. This allows objects of the same class to have different behavior depending on the arguments passed to the method. For example, the ""+"" operator in Java can be used to add integers, doubles, or Strings, and the method that is executed will depend on the types of the operands.
+
+Dynamic polymorphism is achieved through method overriding, where a subclass provides its own implementation of a method that is already defined in its superclass. This allows objects of different classes to be used interchangeably as long as they have a common superclass. For example, both a Cat and a Dog can be treated as Animals, and the speak() method of each subclass can be called polymorphically through the Animal superclass.
+
+Overall, polymorphism allows for more flexible and extensible code that can handle different types of objects without needing explicit conditional statements.",1202,187,220
+71,"Polymorphism is a concept in Object-Oriented Programming (OOP), which allows objects to take on different forms or behaviors based on the context in which they are used. 
+
+One example of polymorphism is method overriding in inheritance. A child class can override a method from its parent class, giving it a different behavior while still maintaining the same method signature. This allows multiple related objects to be treated as the same type, but still have different behaviors.
+
+Another example is method overloading, which allows a class to have multiple methods with the same name but different parameters. This allows a class to perform a similar operation on different data types, without the need to write multiple methods with different names.
+
+The use of interfaces in Java is another example of polymorphism. An interface gives a set of methods that are implemented by any class that implements it. This allows multiple classes to utilize the same interface methods, but implement them differently based on their specific needs.",1041,165,191
+72,"Polymorphism is a principle of object-oriented programming that allows objects of different types to be treated as if they were the same type. This means that different objects can respond to the same message in different ways, according to their own individual behaviors.
+
+An example of polymorphism is the ""+"" operator in different programming languages; it can be used to add numbers, concatenate strings, combine arrays, etc. The same operator works with different types of operands, and returns a result specific to each operand.
+
+Another example of polymorphism is inheritance, where a subclass inherits methods and attributes from a superclass, but can also override methods or add new ones, changing the behavior of the inherited method. This allows subclasses to share common features but also have their own specific behaviors.",837,130,150
+73,"Polymorphism is a fundamental concept in object-oriented programming that refers to the ability of objects to take on multiple forms. In other words, polymorphism allows different objects to respond to the same message or methods in different ways. Two common examples of polymorphism are:
+
+1. Method Overloading: This occurs when a class has multiple methods with the same name but different parameters. For example, in Java, there are two methods called ""println()"" - one for printing strings and another for printing integers. The method gets overloaded to perform different tasks depending on the situation.
+
+2. Inheritance: This is the ability of a child class to inherit and use methods and properties from a parent class. The child class can use the methods of the parent class, modify them or override them to suit its needs. For instance, Animal is a parent class and Dog is a child class, in this case, Dog will inherit the characteristics of Animal class, but Dog can modify it as well.",997,166,196
+74,"Polymorphism is a programming concept that allows objects of different classes to be treated as if they are of the same class. It is achieved through inheritance and method overriding. A common example of polymorphism is when a parent class has a method that is overridden by one or more of its child classes.
+
+For example, consider a parent class called ""Animal"" and its child classes ""Cat"" and ""Dog"". The Animal class has a method called ""makeSound()"". The Cat and Dog classes both inherit from the Animal class and override the ""makeSound()"" method to produce their specific sounds:
+
+```
+class Animal {
+   public void makeSound() {
+      System.out.println(""generic animal sound"");
+   }
+}
+
+class Cat extends Animal {
+   public void makeSound() {
+      System.out.println(""meow"");
+   }
+}
+
+class Dog extends Animal {
+   public void makeSound() {
+      System.out.println(""bark"");
+   }
+}
+```
+
+Now you can create objects of type Animal, Cat, or Dog, and call their ""makeSound()"" methods. For example:
+
+```
+Animal myAnimal = new Animal();
+Cat myCat = new Cat();
+Dog myDog = new Dog();
+
+myAnimal.makeSound(); // prints ""generic animal sound""
+myCat.makeSound(); // prints ""meow""
+myDog.makeSound(); // prints ""bark""
+```
+
+Thanks to polymorphism, we can treat all these objects as if they are Animals!",1294,199,293
+75,"Polymorphism refers to the ability of objects to take on different forms or behaviors depending on the context in which they are used. In programming, it allows different objects to be treated as if they were the same type, simplifying the design and making the code more flexible and reusable.
+
+An example of polymorphism in Java is the use of the same method name with different input parameters, leading to different behaviors. For instance, the ""+"" operator can be used to concatenate two strings or add two numbers, depending on the input parameters:
+
+String str1 = ""Hello"";
+String str2 = ""World"";
+int x = 5;
+int y = 7;
+
+System.out.println(str1 + "" "" + str2); //outputs ""Hello World""
+System.out.println(x + y); //outputs 12
+
+Another example is inheritance, where a subclass can inherit the behavior of its superclass, but also add specific behaviors of its own. This allows us to use a subclass as if it were a superclass, taking advantage of the polymorphism principle:
+
+public class Animal {
+    public void speak() {
+        System.out.println(""Animal speaks"");
+    }
+}
+
+public class Dog extends Animal {
+    public void speak() {
+        System.out.println(""Dog barks"");
+    }
+}
+
+Animal myAnimal = new Animal();
+Animal myDog = new Dog();
+myAnimal.speak(); //outputs ""Animal speaks""
+myDog.speak(); //outputs ""Dog barks""",1327,208,291
+76,"Polymorphism is the ability of objects of different types to be treated as if they are the same type. This means that a single method can be used by objects of multiple classes, as long as they share the same method signature. Polymorphism enables code to be more flexible, reusable, and provide dynamic behavior.
+
+For example, in object-oriented programming, a parent class may have multiple child classes that inherit its methods. Each child class may implement the methods in its unique way but they all share the same method signature, which allows them to be called the same way.
+
+Another example is the concept of method overloading, where multiple methods with the same name but different parameter types can be defined within a class. This allows for the same method to be used with different data types.
+
+Polymorphism is commonly used in languages such as Java, C++, and Python, where it enables code to be more extensible and robust.",943,159,186
+77,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be used interchangeably, while still providing their own unique behaviors. It is achieved through inheritance and method overriding.
+
+For example, let's say we have a parent class called Animal, which has a method called ""move"". We can then create multiple child classes, such as Dog, Cat, and Bird, that inherit from Animal and each have their own implementation of the ""move"" method. When we create objects of these child classes, we can use the ""move"" method on each object, but get a different behavior depending on the specific class.
+
+Another example could be a program that calculates the area of shapes. We could create a parent class called Shape with a method called ""calculateArea"". Then, we could create child classes for each type of shape, such as Circle, Square, and Triangle, which each have their own implementation of ""calculateArea"" to fit their specific shape.
+
+In both of these examples, we can see how polymorphism allows for flexibility and versatility in our code, making it easier to write and maintain.",1129,183,224
+78,"Polymorphism is the ability of an object to take on multiple forms. In programming, it refers to the ability of different objects to be used interchangeably, often through inheritance and interfaces.
+
+For example, a parent class Animal may have several child classes such as Cat, Dog and Bird. Each of these child classes have their own implementation of methods like move(), makeSound() etc which they inherited from the parent class Animal. When we call the move() method on an object of type Animal, the specific implementation of move() method in either Cat, Dog or Bird is executed depending on the object we are working with.
+
+Another example can be the usage of interfaces. Suppose we have an interface named Shape with methods like area() and perimeter(). Different classes like Circle, Rectangle and Triangle implement this Shape interface and provide their own implementation for the area() and perimeter() methods. When we pass these objects to a function that expects a Shape object, they can be used interchangeably, and the specific implementation of area() and perimeter() depends on the object we are working with.",1130,182,214
+79,"Polymorphism is the ability of an object in object-oriented programming to have multiple forms. It is a core concept of object-oriented programming where a single class may be represented in different ways. 
+
+One example of polymorphism is method overloading. This is where a class has multiple methods with the same name, but different parameters. For instance, a class may have multiple ""print"" methods, each one taking a different type of argument.
+
+Another example is method overriding. Here, a subclass takes a method from a parent class but implements its own version. For instance, the subclass may implement a more specialized version of a method defined in a parent class.
+
+Polymorphism also applies to interfaces, where a single interface may be implemented by multiple classes in different ways.",806,127,153
+80,"Polymorphism is a fundamental concept in object-oriented programming that allows objects with different class types to be treated as if they belong to the same class hierarchy. It enables an entity to take on different forms or states. There are two types of polymorphism: compile-time polymorphism and runtime polymorphism. 
+
+Compile-time polymorphism refers to the code that is executed at compile time. It is achieved through function overloading or operator overloading. Function overloading allows functions with the same name to have different parameters, while operator overloading allows operators such as +, -, and * to have different meanings based on their parameters.
+
+Runtime polymorphism, on the other hand, refers to the code that is executed at runtime. It is achieved through inheritance and method overriding. Method overriding allows a subclass to redefine an inherited method from its parent class. 
+
+Here are some examples of polymorphism:
+- A subclass is polymorphic with its parent class because it inherits all of its parent's methods and can therefore be treated as if it were the parent class.
+- An ""Animal"" superclass may have different subclasses such as ""Dog,"" ""Cat,"" and ""Bird."" A method that accepts parameters of type ""Animal"" can accept objects of any of its subclasses, allowing a single method to handle multiple types of objects.
+- An overloaded method named ""print"" can accept different parameters such as integers, strings, and floats, and perform different operations based on the parameter types.",1536,238,291
+81,"Polymorphism is the ability of an object of a certain data type to be treated as if it were an object of a different type. This is often achieved through inheritance and overriding methods.
+
+For example, in a class hierarchy that includes a superclass ""Animal"" and subclasses ""Dog"" and ""Cat,"" a method ""speak"" could be overridden in the subclasses to make each animal ""speak"" differently. The same method can be called on any Animal object, but the behavior will be different depending on whether the object is a Dog or Cat.
+
+Another example of polymorphism can be seen with the ""+"" operator. This operator can be used to add together numbers, concatenate strings, or combine arrays or lists. The behavior of the operator is dependent on the data type of the operands, allowing for efficient and flexible code.",810,138,165
+82,"Polymorphism is the ability of an object to take on many forms or behaviors in response to different situations. In programming, it allows objects of different classes to be used interchangeably if they share common interfaces, methods or inheritance relationships. Here are some examples of its usage:
+
+1. Inheritance: Polymorphism can be achieved through class inheritance where a subclass can inherit and override methods of the superclass. A common example is the use of a superclass Animal that has several subclasses like Dog, Cat, and Horse. They all inherit the common properties and methods of Animal, but can also have unique behaviors specific to their own class.
+
+2. Interface Implementation: Another way polymorphism can be achieved in Java is through interfaces. This allows objects of different classes to implement the same interface and share common methods. For example, a media player program may have different types of audio and video files represented by classes like Mp3, Wav, and Mp4, but they all implement the same interface to play, stop, and pause media files.
+
+3. Method Overloading: This is a form of polymorphism achieved within a single class where different methods have the same name but different parameters or argument types. This allows the effective reuse of a method name for different purposes depending on the context. For instance, a math class may have an ‘add’ method that can add two integers, decimal numbers or even strings.",1471,236,281
+83,"Polymorphism is the concept where objects of different classes can be treated as if they are objects of the same class. It allows you to write more generic code that can be reused in many different situations, and it provides a way for objects to interact with each other even if they have different implementations of the same method. Polymorphism in object-oriented programming is achieved through method overriding and method overloading. 
+
+Here are examples of polymorphism:
+
+1. Method Overloading: This is when a class has multiple methods with the same name, but different parameter lists. The compiler determines the correct method to execute based on the parameters of the method call. For example, in Java, the 'print' method is overloaded in the 'System.out' class to allow printing of different types of data.
+
+2. Method Overriding: This is when a subclass provides its own implementation of a method that is already defined in its superclass. The implementation in the subclass overrides the implementation in the superclass. For example, in Java, the 'toString' method is defined in the 'Object' class, and can be overridden in any subclass to provide a customized string representation of that object.
+
+3. Inheritance: This is when objects of a subclass can be treated as objects of their superclass. A subclass inherits all of the methods and properties of its superclass, and can also add its own unique methods and properties. For example, in Java, a 'Cat' class can inherit from an 'Animal' class, and because it is a subclass of 'Animal', it can be treated as an 'Animal' object in many situations.",1617,265,323
+84,"Polymorphism is a programming language feature that allows an object to take on many different forms or types. It means that an object has the ability to behave differently depending on the context in which it is being used. 
+
+For example, in object-oriented programming, a superclass can have multiple subclasses that inherit its properties and methods, but the subclasses can also override those methods or add new ones. This is an example of method overriding, where a method in a subclass has the same name as a method in its superclass, but the implementation is different. 
+
+Another example of polymorphism is function overloading, where multiple functions can have the same name, but different parameters. This allows the programmer to use the same name for different functions that perform similar tasks, but with different arguments.",842,134,155
+85,"Polymorphism means having multiple forms. It is a concept in object-oriented programming that allows objects of different classes to be treated as if they were part of the same class hierarchy. 
+
+One example of polymorphism is method overriding, where a subclass defines a method with the same name and signature as a method in its superclass. When the method is called on an object of the subclass, the subclass's implementation of the method is executed.
+
+Another example is method overloading, where multiple methods with the same name but different parameters are defined in a class. The correct method to be called is determined at compile time based on the number and types of arguments passed.
+
+Interfaces can also utilize polymorphism, where multiple classes implement the same interface and can be treated generically as objects of that interface type.
+
+Overall, polymorphism allows for more flexible and modular code by enabling a single interface to be used with multiple related classes.",999,159,182
+86,"Polymorphism is the ability of an object to take on many forms. It allows different objects to be treated as if they were the same type, as long as they share a common interface or parent class.
+
+One common example of polymorphism is with shape objects. A shape object can be of many types, such as a circle, square, or triangle. Even though each of these shapes has unique properties and methods, they all share common shape attributes such as a perimeter, area, and color.
+
+Another example of polymorphism is with animal objects. An animal object can be of many types, such as a cat, dog, or bird. Even though each of these animals has unique properties and methods, they all share common animal attributes such as a sound, movement, and eat behavior.
+
+In programming languages such as Java and Python, polymorphism is achieved using inheritance, interfaces, and method overriding. It allows for more flexible and efficient code as objects can be reused and treated interchangeably.",984,166,198
+87,"Polymorphism is a programming concept that allows different objects to be treated as if they were the same type, making the code more flexible and extensible. In other words, it is the ability of different objects to be used interchangeably. 
+
+There are two main types of polymorphism: compile-time polymorphism and run-time polymorphism. 
+
+Compile-time polymorphism is achieved through method overloading, where multiple methods with the same name but different parameters are defined in a class. This allows the user to call the same method but with different parameters, depending on the specific situation. Examples include the ""+"" operator in Java, which can be used to add numbers or concatenate strings.
+
+Run-time polymorphism, on the other hand, is achieved through method overriding. This occurs when a subclass overrides a method in its superclass, providing its own implementation of the method. When an object of the subclass is referred to by its superclass type, the overridden method in the subclass is called at runtime. This allows for greater flexibility in terms of code reuse and modularity. An example of this is when a superclass ""Animal"" has a method ""speak()"", which is overridden by a subclass ""Dog"", providing its own implementation of what a bark sounds like. 
+
+In summary, polymorphism allows for greater flexibility and code reuse in programming by allowing different objects to be treated as the same type.",1436,226,275
+88,"Polymorphism is the ability of objects of different types to be treated as if they are of the same type. This allows code to be written more generically, which can make it easier to maintain and extend. 
+
+One example of polymorphism in programming is method overloading where the same method name can be used to perform different tasks based on the input parameters. For example, in Java, the ""+"" operator can be used to add numbers as well as concatenate strings.
+
+Another example of polymorphism is interface implementation or class inheritance, where multiple classes can implement the same interface or inherit from the same base class, and can be used interchangeably. For instance, in Python, the ""duck typing"" allows different types to be used in the same way as long as they implement the same methods or attributes.",824,138,161
+89,"Polymorphism is the ability of an object to take on many forms. In object-oriented programming, it allows objects to be treated as different types based on their behavior or properties. 
+
+An example of polymorphism can be seen in animal objects. Animals all share certain properties such as having a name and age, but they also have unique behaviors that can differentiate one animal from the others. For example, a dog object can bark, a cat object can meow, and a bird object can fly.
+
+Another example is the ""+"" operator in programming languages. In Python, this ""+"" operator can add numbers or concatenate strings, depending on the data types of the objects being used. This is polymorphism in action, as the ""+"" operator can take on different forms based on the objects being used.",786,134,157
+90,"Polymorphism is a concept in object-oriented programming that refers to the ability of objects belonging to different classes to be used in a similar way. In other words, code can work with objects of multiple types as though they were all of one type.
+
+One of the most common examples of polymorphism in programming is the use of inheritance. Suppose we have a parent class called ""Animal"" and two child classes called ""Dog"" and ""Cat"". The parent class contains a method called ""makeSound"". Both the Dog and Cat classes inherit from the Animal class, but each of them can have their own version of the ""makeSound"" method. We can create a polymorphic collection of animals and call the ""makeSound"" method on each of them with the same line of code. The behavior of the method will depend on the actual object it is being called on.
+
+Another example of polymorphism is the use of interfaces. Interfaces define a set of methods that must be implemented by any class that implements that interface. This allows us to treat objects of different classes as though they were all of the same type, as long as they implement the same interface. For example, if we define an interface called ""Drawable"" with a ""draw"" method, we can create a polymorphic collection of any objects that implement the Drawable interface, and call the draw method on each of them with the same line of code.",1377,240,282
+91,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they were of the same class. This means that different objects can respond to the same message or method in different ways.
+
+One common example of polymorphism is inheritance. Imagine a program that needs to represent different types of animals. You could create a base class called ""Animal"" and then create several subclasses like ""Dog"", ""Cat"", and ""Bird"". Each of these subclasses could have its own implementation of the ""speak"" method. When you call the ""speak"" method on an animal object, the program will automatically call the appropriate implementation based on the type of animal.
+
+Another example of polymorphism is interface implementation. In this case, multiple classes can implement the same interface (a set of methods that must be implemented by any object that implements the interface). This allows different objects to share common behavior.
+
+In general, polymorphism is a powerful tool for creating flexible, reusable code that can be adapted to different situations.",1105,172,207
+92,"Polymorphism is the ability of an object to take on many forms. It means that an object can be treated as if it is one of many different types. In programming, this is achieved through the use of inheritance or interfaces. 
+
+For example, in an object-oriented programming language, a parent class or interface may define a method called ""draw"". Child classes that inherit from this parent class, such as a ""Rectangle"" class or a ""Circle"" class, can implement the ""draw"" method in their own unique way. The parent class can then treat these child objects polymorphically, calling the ""draw"" method without knowing exactly which child object it is dealing with. 
+
+Another example of polymorphism in programming is the use of function overloading. In this case, multiple functions with the same name can be defined, but with different parameter lists. When the function is called, the correct version of the function is determined based on the arguments passed. This allows for greater flexibility and easier-to-read code.",1019,165,204
+93,"Polymorphism is a concept in object-oriented programming that allows objects of different classes to be treated as if they are of the same class. It allows a single interface to be implemented by multiple classes.
+
+A common example of polymorphism is the use of inheritance, where a subclass inherits from a superclass and has access to its methods and attributes. The subclass can then override or extend these methods to suit its specific needs.
+
+Another example is the method overloading, where multiple methods can have the same name but different parameters. This allows programmers to use a single method name to perform multiple actions depending on the types of arguments passed.
+
+Finally, interfaces, abstract classes and virtual methods are also used to achieve polymorphism, allowing multiple classes to implement common methods or attributes.  Overall, the goal is to make code more versatile and extensible, allowing for greater reuse and flexibility.",964,150,173
+94,"Polymorphism is a concept in object-oriented programming that allows objects to take on different forms or behaviors while sharing a common interface. In other words, it enables different objects to be treated as if they were the same object type, even though they may have different underlying implementations. 
+
+Here are a few examples of how polymorphism can be used: 
+
+1. Method Overriding: With method overriding, a subclass can redefine a method that is already defined in its superclass. For example, both a Dog and a Cat can inherit from an Animal class, but they can each override the makeSound() method to produce their own unique sounds. 
+
+2. Interface Implementation: Interfaces define a set of methods that a class MUST implement, creating a common interface for different classes that implement the same interface. For example, a Duck and a Goose may both implement the Bird interface, which requires both classes to implement the fly() and makeSound() methods.
+
+3. Abstract Classes: Abstract classes are similar to interfaces in that they define a set of methods that subclasses MUST implement. However, they also allow for the implementation of common functionality that can be inherited by all subclasses. For example, a Shape abstract class may define a calculateArea() method and can be implemented by different subclasses such as a Square, Triangle, and Circle.",1381,219,262
+95,"Polymorphism is a concept in object-oriented programming where an object can take on different forms or shapes. It allows objects of different classes to be treated as if they were of the same type. There are two types of polymorphism: compile-time and runtime polymorphism.
+
+Compile-time polymorphism is achieved through function overloading, where two or more functions have the same name but different parameters. This allows the compiler to choose the appropriate function to call based on the arguments passed. For example:
+
+```
+void print(int num) {
+   cout << ""Integer: "" << num << endl;
+}
+
+void print(string str) {
+   cout << ""String: "" << str << endl;
+}
+
+int main() {
+   print(10);  // calls print(int)
+   print(""Hello"");  // calls print(string)
+   return 0;
+}
+```
+
+Runtime polymorphism is achieved through inheritance and function overriding, where a subclass can provide its own implementation of a method that was originally defined in its superclass. This allows objects of the same superclass to behave differently based on their specific subclass implementation. For example:
+
+```
+class Animal {
+public:
+   virtual void sound() { cout << ""The animal makes a sound"" << endl; }
+};
+
+class Dog: public Animal {
+public:
+   void sound() { cout << ""The dog barks"" << endl; }
+};
+
+class Cat: public Animal {
+public:
+   void sound() { cout << ""The cat meows"" << endl; }
+};
+
+int main() {
+   Animal* a1 = new Dog();
+   Animal* a2 = new Cat();
+   a1->sound();  // calls Dog's sound() method
+   a2->sound();  // calls Cat's sound() method
+   return 0;
+}
+```",1558,253,360
+96,"Polymorphism is the concept in object-oriented programming that allows objects to take on many forms, depending on the context in which they are used. It is achieved through inheritance and interfaces.
+
+An example of polymorphism could be a shape class inherited by multiple classes, such as a circle or rectangle class. Despite being different shapes, they share the same methods and properties defined in the shape class.
+
+Another example is with interfaces. Imagine an interface called ""CanFly"". Multiple classes, such as bird, airplane, and helicopter, can implement this interface, allowing them to have a ""fly()"" method that can be called without knowing the specific type of object.
+
+Overall, polymorphism allows for flexible and efficient object-oriented programming.",775,116,143
+97,"Polymorphism is the ability of an object to take many forms. In object-oriented programming, polymorphism refers to the ability of objects to behave in multiple forms or ways. It means that an object can be used as an instance of multiple classes, allowing different objects to be treated as if they were of one common type. 
+
+For example, in Java, a superclass ""Animal"" can have a method called ""makeSound."" Different subclasses of ""Animal,"" such as ""Cat"" and ""Dog,"" can override the ""makeSound"" method to produce different sounds. When calling the ""makeSound"" method on an instance of ""Cat"" or ""Dog,"" the appropriate sound will be produced accordingly. 
+
+Another example of polymorphism is in interfaces. An interface defines a set of methods that must be implemented by any class that implements that interface. A single implementation of an interface can be used by multiple other classes, allowing for code reusability and flexibility.",940,150,193
+98,"Polymorphism is a concept in object-oriented programming which refers to the ability of an object to take on many forms or have multiple behaviors. There are two types of polymorphism: compile-time (or static) and runtime (or dynamic).
+
+Compile-time polymorphism occurs when the correct method to call is determined by the compiler based on the method's name, argument type, and number.
+
+Example: Method overloading in Java. We can define multiple methods with the same name but different argument types and/or number of arguments.
+
+```
+public void add(int a, int b) {
+    int result = a + b;
+    System.out.println(""Result: "" + result);
+}
+
+public void add(float a, float b) {
+    float result = a + b;
+    System.out.println(""Result: "" + result);
+}
+```
+
+Here, the add() method is overloaded with two different parameter types - int and float.
+
+Runtime polymorphism occurs when the correct method to call is determined at runtime based on the type of object invoking the method.
+
+Example: Method overriding in Java. We can define a method in a subclass with the same signature (name, return type, and parameter types) as a method in its superclass, thereby replacing the original implementation.
+
+```
+class Animal {
+    public void talk() {
+        System.out.println(""Animal is talking..."");
+    }
+}
+
+class Dog extends Animal {
+    public void talk() {
+        System.out.println(""Dog is barking..."");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myPet = new Dog();
+        myPet.talk();   // Output: ""Dog is barking...""
+    }
+}
+```
+
+Here, the talk() method is overridden in the Dog subclass, and when we call this method on an instance of Dog as an Animal, it will invoke the Dog-specific implementation.",1750,272,378
+99,"Polymorphism means the ability of an object or method to take on many forms. In object-oriented programming, it allows different classes to share a common interface and for objects to be treated as if they are of a common type. 
+
+Here are some examples of its usage: 
+
+1) Inheritance: A superclass can define a method that will be overridden by its subclass. The subclass can implement the method with different functionality, but it can still be called in the same way as its superclass. 
+
+2) Interfaces: An interface is a contract that specifies a set of methods that a class should implement. Different classes can implement the same interface, and they can be used interchangeably as long as they implement the same set of methods. 
+
+3) Method overloading: This allows multiple methods to have the same name but different parameters. When the method is called, the correct one is selected based on the parameters passed in. 
+
+4) Subtype polymorphism: This is when a subclass can be substituted for its superclass. For example, if a method takes an Animal object as a parameter, it can also take a Dog object because Dog is a subclass of Animal.",1148,196,234
