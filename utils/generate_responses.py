@@ -1,12 +1,12 @@
 # LIBRARIES
 import openai  # wrapper for OpenAI API
-import config.key as key  # key.py file with API key
+import config  # key.py file with API key
 import tiktoken  # tokenizer for OpenAI API
 import pandas as pd  # data manipulation
 import time  # retrying API calls
 
 # CONSTANTS
-openai.api_key = key.openai_api_key  # put your API key here
+openai.api_key = config.openai_api_key  # put your API key here
 ENC = tiktoken.encoding_for_model("gpt-3.5-turbo")  # choose model tokenizer
 RETRY_DELAY_SECONDS = 10  # seconds to wait before retrying API call
 
