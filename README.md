@@ -8,7 +8,7 @@ The repository consists of four main notebooks:
 
 ## 1. Data Collection - Control Group (`1_Data_Collection_Control_Group.ipynb`)
 
-This notebook describes the collection of the control group data using `generate_responses.py`. Collection consists of 500 responses (5 sets of 100) from the ChatGPT model. 
+This notebook describes the collection of the control group data using `utils/generate_responses.py`. Collection consists of 500 responses (5 sets of 100) from the ChatGPT model. 
 
 Prompts were generated using templates from `prompt_templates.py` without specifying any length-defining keywords, creating a baseline of response length variability. 
 
@@ -26,7 +26,7 @@ It includes a deep dive into the
 
 ## 3. Data Collection - Experimental Group (`3_Data_Collection_Experimental_Group.ipynb`)
 
-In this notebook, an experimental group was gathered using the `generate_responses.py` function, with the prompt templates from `prompt_templates.py` and length-defining keywords from `length_defining_keywords.py` serving as variables. 
+In this notebook, an experimental group was gathered using the `utils/generate_responses.py` function, with the prompt templates from `utils/prompt_templates.py` and length-defining keywords from `utils/length_defining_keywords.py` serving as variables. 
 
 It automates data collection by making API requests and fetching 100 responses for each template-keyword combination. 
 
