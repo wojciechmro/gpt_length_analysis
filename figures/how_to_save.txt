@@ -1,0 +1,3 @@
+# matplotlib
+
+plt.savefig(filename, dpi=300, bbox_inches='tight')
