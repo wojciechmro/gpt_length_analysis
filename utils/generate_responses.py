@@ -1,6 +1,6 @@
 # LIBRARIES
 import openai  # wrapper for OpenAI API
-import key  # key.py file with API key
+import config.key as key  # key.py file with API key
 import tiktoken  # tokenizer for OpenAI API
 import pandas as pd  # data manipulation
 import time  # retrying API calls
